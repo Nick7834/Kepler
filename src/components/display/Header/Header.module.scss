@@ -1,0 +1,36 @@
+.header {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+
+    .logo {
+        display: inline-block;
+        width: max-content;
+
+            a {
+                font-size: 30px;
+                color: rgb(53, 78, 161);
+            }
+    }
+
+    .form {
+       max-width: 250px;
+       width: 100%;
+    }
+
+    .search {
+      padding: 5px;
+      border: 0;
+      outline: 0;
+      border-bottom: 2px solid rgb(53, 78, 161);
+      font-family: 'Rajdhani';
+      font-size: 17px;
+
+        &::placeholder {
+            color: rgb(93, 93, 93);
+        }
+    }
+
+}
