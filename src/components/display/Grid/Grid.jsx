@@ -15,7 +15,7 @@ export const Grid = ({ props }) => {
 
         SetPost(response)
       }
-
+      
       axiosPost()
   }, []);
 
