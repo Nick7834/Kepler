@@ -6,13 +6,13 @@ import { PostDetail } from './display/PostDetail/PostDetail'
 
 export const Router = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
         <Routes>
             <Route element={<App />} path='/' />
             <Route element={<PostDetail />} path='/posts/:id' />
 
             <Route path='*' element={<div>Not posts</div>} />
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
