@@ -8,7 +8,7 @@ export const PostMain = ({ post }) => {
         <div className="container">
             <div className={styles.content}>
 
-                <Link to='/' className={styles.link}>Back</Link>
+                <Link to='/Kepler' className={styles.link}>Back</Link>
 
                 <div className={styles.main}>
                     <div className={styles.title}>{post.title}</div>

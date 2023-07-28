@@ -14,7 +14,7 @@ export const Header = ({ onPost }) => {
         <div className="container">
             <div className={styles.content}>
 
-               <div className={styles.logo}><Link to='/' >Kepler</Link></div>
+               <div className={styles.logo}><Link to='/Kepler' >Kepler</Link></div>
 
                 <form className={styles.form}>
                     <div className={styles.search_img}></div>
