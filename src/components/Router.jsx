@@ -9,7 +9,7 @@ export const Router = () => {
     <BrowserRouter>
         <Routes>
             <Route element={<App />} path='/Kepler' />
-            <Route element={<PostDetail />} path='/Kepler/posts/:id' />
+            <Route element={<PostDetail />} path='/posts/:id' />
 
             <Route path='*' element={<div>Not posts</div>} />
         </Routes>
