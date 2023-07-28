@@ -1,17 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Header.module.scss';
+import { Link } from 'react-router-dom';
 
-export const Header = () => {
+export const Header = ({ onPost }) => {
+
+  const [search, setSerch] = useState('');
+  
+  onPost(search)
+
+
   return (
     <header className={styles.header}> 
-        
-        <div className={styles.logo}><a href="#">Kepler</a></div>
+        <div className="container">
+            <div className={styles.content}>
 
-        <form className={styles.form}>
-            <div className={styles.search_img}></div>
-            <input type="text" placeholder='Search...' className={styles.search} />
-        </form>
+               <div className={styles.logo}><Link to='/' >Kepler</Link></div>
 
+                <form className={styles.form}>
+                    <div className={styles.search_img}></div>
+                    <input type="text" placeholder='Search...' className={styles.search} value={search} onChange={e => setSerch(e.target.value)} />
+                </form>
+
+            </div>
+        </div>
     </header>
   )
 }

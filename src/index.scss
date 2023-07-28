@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&family=Roboto+Condensed&display=swap');
 
 @import './global/global';
+@import './components/ui//Loading/loading';
+
+.container {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+//////////
 
 
+.hVh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
