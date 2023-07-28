@@ -11,6 +11,10 @@ $duration: .4s;
 
     grid-column: 2 / 3;
 
+    @media (max-width: 700px) {
+       grid-column: 1;
+    }
+
     .loader {
         width: 44px;
         height: 44px;

@@ -5,7 +5,28 @@
         display: grid;
 
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
+        gap: clamp(0.313rem, calc(-0.926rem + 2.83vw), 1.25rem);
+
+
+            @media (max-width: 700px) {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                    'one'
+                    'two'
+                    'three'
+                    'four'
+                    'five'
+                    'six'
+                    'seven'
+                    'eght'
+                    'nine'
+                    'ten'
+                    'eleven'
+                    'tvelve'
+                ;
+
+                gap: 15px;
+            }
     }
 
 
