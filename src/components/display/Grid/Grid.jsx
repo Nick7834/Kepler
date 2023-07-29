@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Posts } from '../Posts/Posts'
 import styles from './Grid.module.scss';
-import axios from 'axios';
 import { PostService } from '../../../service/post.service';
 import { Loading } from '../../ui/Loading/Loading';
 
