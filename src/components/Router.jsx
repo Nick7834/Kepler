@@ -8,7 +8,7 @@ export const Router = () => {
   return (
     <HashRouter>
         <Routes>
-            <Route element={<App />} path='/Kepler' />
+            <Route element={<App />} path='/' />
             <Route element={<PostDetail />} path='/posts/:id' />
 
             <Route path='*' element={<div>Not posts</div>} />
